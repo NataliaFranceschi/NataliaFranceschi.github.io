@@ -1,0 +1,75 @@
+body {
+    font-size: 1.1em;
+    font-family: "Oswald", sans-serif;
+    background-color: #080808;
+    color: white;
+    margin: 0;
+    padding: 0;}
+
+#fotonatalia {
+    float: right;
+    height: 100%;}
+
+h1 {position: absolute;
+    left: 10%;
+    top: 135px;
+    font-size: 30px;}
+
+h2 {position: absolute;
+    left: 20%;
+    top: 180px;
+    font-size: 25px}
+
+#menu ul {
+    background-color: rgb(51, 47, 47) ;
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    position: absolute;
+    top: 270px;
+    border-top: solid 5px #fffb00;
+    padding-top: 10px;} 
+
+#menu li {
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 20px;}
+
+a {
+        text-decoration: none;
+        color: white;}
+
+#menu a:hover,
+#menu a.selected {
+    background-color: #fffb00;
+    padding: 14px;
+    color: #000;}
+
+main{
+    position: absolute;
+    top: 350px;}
+
+h3{
+    background-color: #fffb00;
+    color: #000; 
+    height: 30px;
+    width: 210px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 5px;}
+
+p { margin-left: 50px;}
+.conteudo {margin-left: 35px;}
+
+footer {
+    position: absolute;
+    top: 1000px;
+    background-color: rgb(51, 47, 47) ;
+    width: 100%;
+    height: 70px;}
+
+#redessociais li {
+    display: inline-block;
+    padding-right: 10px ;
+    vertical-align: middle;
+    padding-bottom: 0;}
