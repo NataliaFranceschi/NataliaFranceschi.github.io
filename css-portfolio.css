@@ -4,7 +4,14 @@ body {
     background-color: #080808;
     color: white;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
+
+header{
+    height: 274px;
+    background-image: url(fundo1.jpg);
+    background-size: cover;
+    border-bottom: solid 5px #fffb00;}
 
 #fotonatalia {
     float: right;
@@ -26,8 +33,7 @@ h2 {position: absolute;
     height: 45px;
     text-decoration: none;
     position: absolute;
-    top: 270px;
-    border-top: solid 5px #fffb00;
+    top: 260px;
     padding-top: 10px;} 
 
 #menu li {
@@ -43,11 +49,10 @@ a {
 #menu a.selected {
     background-color: #fffb00;
     padding: 14px;
-    color: #000;}
+    color: #000;
+    font-weight: bold;}
 
-main{
-    position: absolute;
-    top: 350px;}
+main{margin-top: 80px;}
 
 h3{
     background-color: #fffb00;
@@ -58,18 +63,31 @@ h3{
     margin-left: 10px;
     border-radius: 5px;}
 
-p { margin-left: 50px;}
-.conteudo {margin-left: 35px;}
+p { 
+    margin-left: 50px;
+    margin-right: 50px;}
+
+.conteudo { 
+    margin-left: 35px;
+    margin-right: 50px;}
 
 footer {
-    position: absolute;
-    top: 1000px;
-    background-color: rgb(51, 47, 47) ;
-    width: 100%;
-    height: 70px;}
+        display: inline-block;
+        background-color: rgb(51, 47, 47) ;
+        width: 100%;
+        height: 70px;
+    }
 
-#redessociais li {
-    display: inline-block;
-    padding-right: 10px ;
-    vertical-align: middle;
-    padding-bottom: 0;}
+#redessociais img{
+        width: 40px;
+        height: 40px;
+    }
+
+#redessociais ul li {
+        display: inline-block;
+        padding-right: 10px;
+        vertical-align: middle;
+        font-size: 0.9em;}
+
+@media (max-width: 720px) { 
+    #menu {display: none;}}
