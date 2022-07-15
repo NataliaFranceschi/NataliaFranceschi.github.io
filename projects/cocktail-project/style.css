@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(246, 246, 246);
+  }
+  
+  .header {
+    position: relative;
+    background-color:rgb(224, 127, 0);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+  }
+  
+  .title {
+    color: white;
+    font-size: 60px;
+    padding-left: 30px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .title strong {
+    color: white;
+  }
+  
+  .drinks {
+    display: flex;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+  .drink {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 5px;
+    width: 200px;
+    border: 2px solid rgb(234, 234, 233);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .drink .drink__title {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    justify-content: center;
+  }
+ 
+  .drink .drink__image {
+    width: 100%;
+  }
+
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 5px;
+    width: 300px;
+    border: 2px solid rgb(234, 234, 233);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .recipe .recipe__title, .recipe__instructions, .ingredient {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  .recipe .recipe__title {
+    font-size: 1.2em;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  .ingredient {
+    padding: 5px;
+  }  
+  
+  ol {
+    padding-top: 10px;
+  }
+  .search {
+    display: flex;
+    flex-basis: 32%;
+    flex-flow: column wrap;
+    background-color: rgb(241, 241, 238);
+    height: 100vh;
+    align-items: center;
+    padding-top: 200px;
+  }
+
+  .search input {
+    width: 70%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(224, 127, 0);
+    font-weight: bold;
+  }
+  
+  .search button {
+    background-color: rgb(224, 127, 0);
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 5px;
+    width: 30%;
+  }
+
+  .instruction {
+    color: rgb(224, 127, 0) ;
+    font-weight: bold;
+  }
