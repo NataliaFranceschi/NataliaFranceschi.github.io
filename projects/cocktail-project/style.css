@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     font-size: small;
+    font-family: 'Acme';
   }
   
   body {
-    background-color: rgb(246, 246, 246);
+    background-color: rgb(241, 241, 238);
   }
-  
+
   .header {
     position: relative;
     background-color:rgb(224, 127, 0);
@@ -33,37 +34,33 @@
     width: 100%;
   }
   
-  .title strong {
-    color: white;
-  }
-  
   .drinks {
     display: flex;
-    flex-basis: 70%;
+    flex-basis: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 40px 0;
+    background-color: rgb(246, 246, 246);
+    padding: 40px 0px;
   }
 
-  .drink {
+  .drink, .recipe {
     display: flex;
     flex-direction: column;
-    height: auto;
     margin: 5px;
     width: 200px;
     border: 2px solid rgb(234, 234, 233);
     border-radius: 5px;
-    box-sizing: border-box;
+    margin-bottom: auto;
   }
-  
+
   .drink .drink__title {
     display: flex;
     align-items: center;
-    flex-grow: 1;
     padding: 10px;
     text-align: center;
     font-weight: 800;
     justify-content: center;
+    font-size: 1.2em;
   }
  
   .drink .drink__image {
@@ -71,20 +68,12 @@
   }
 
   .recipe {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: 5px;
     width: 300px;
-    border: 2px solid rgb(234, 234, 233);
-    border-radius: 5px;
-    box-sizing: border-box;
   }
 
   .recipe .recipe__title, .recipe__instructions, .ingredient {
     display: flex;
     align-items: center;
-    flex-grow: 1;
     padding: 10px;
   }
 
@@ -99,36 +88,117 @@
   }  
   
   ol {
-    padding-top: 10px;
+    padding: 10px;
   }
-  .search {
+  
+  .menu {
     display: flex;
     flex-basis: 32%;
-    flex-flow: column wrap;
-    background-color: rgb(241, 241, 238);
+    flex-direction: column;
     height: 100vh;
-    align-items: center;
-    padding-top: 200px;
+    padding-top: 10px;
+  }
+
+  .search {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 150px;
+    align-content: center;
   }
 
   .search input {
-    width: 70%;
     margin: 5px;
     padding: 5px;
     text-align: center;
     border: 2px solid rgb(224, 127, 0);
     font-weight: bold;
   }
+
+  .search label, .search i {
+    color: rgb(224, 127, 0) ;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .search label {
+    font-size: 1.2em;
+  }
+
+  .search i {
+    font-size: 25px;
+    padding: 20px;
+  }
   
-  .search button {
+  button {
     background-color: rgb(224, 127, 0);
     border: 2px solid rgb(255, 255, 255);
     color: white;
-    padding: 5px;
-    width: 30%;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 5px;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.3em;
   }
 
+  .drink__button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .up {
+    border-radius: 100%;
+  }
+
+  footer{
+    display: none;
+  }
+
+  nav button i {
+    font-size: 18px;
+    margin: 5px;
+  }
+  
   .instruction {
     color: rgb(224, 127, 0) ;
     font-weight: bold;
   }
+
+  ul {
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .up {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+    .search {
+      padding: 0;
+      padding-bottom: 10px;
+    }
+    .up{
+      position: fixed;
+      display: flex;
+      border: none;
+      align-self: flex-end;
+      padding: 1px;
+    }
+    
+    .up i {
+      font-size: 40px;
+      color:white ;
+    }
+  }
+  
